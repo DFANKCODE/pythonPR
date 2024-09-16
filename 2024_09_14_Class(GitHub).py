@@ -40,13 +40,13 @@
 #
 #
 #
-
-
-def sumsumsusmum(x, y): # 相乘
-    sum = x * y
-    print(sum)
-
-sumsumsusmum(20, 20) # print
+#
+#
+# def sumsumsusmum(x, y): # 相乘
+#     sum = x * y
+#     print(sum)
+#
+# sumsumsusmum(20, 20) # print
 
 
 # x= 20j 
@@ -61,3 +61,25 @@ sumsumsusmum(20, 20) # print
 # height=input("請問身高多少:")
 #
 
+#
+# data = []
+#
+# with open('food.txt', 'r') as f:
+#     for line in f:
+#         data.append(line.strip())
+# print(data)
+
+data = []
+count = 0
+
+with open('reviews.txt', 'r') as f:
+    for line in f:
+        data.append(line)
+        count += 1
+        if count % 1000 == 0 :
+            print(len(data))
+print(len(data))
+
+print(data[0])
+print('----------------')
+print(data[1])
